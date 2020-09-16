@@ -1,0 +1,19 @@
+{
+  "name": "snakepit",
+  "version": "0.0.1",
+  "description": "Snakepit UI Framework for React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattonit/snakepit.git"
+  },
+  "author": "mattonit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mattonit/snakepit/issues"
+  },
+  "homepage": "https://github.com/mattonit/snakepit#readme"
+}
