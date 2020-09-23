@@ -38,10 +38,16 @@
     "eslint-plugin-react": "^7.21.0",
     "eslint-plugin-react-hooks": "^4.1.2",
     "html-webpack-plugin": "^4.5.0",
+    "husky": "^4.3.0",
     "sass-loader": "^10.0.2",
     "style-loader": "^1.2.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:js"
+    }
   }
 }
