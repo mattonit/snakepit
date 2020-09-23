@@ -11,6 +11,7 @@
 
 # Directories to ignore
 /node_modules/
+/docs/
 
 # OS or Editor directories
 ._*

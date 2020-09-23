@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Snakepit UI Framework for React",
   "scripts": {
-    "webpack": "webpack-dev-server --config config/webpack.docs.config.js --progress --colors"
+    "build:docs": "webpack --config config/webpack.docs.config.js --progress --colors",
+    "dev": "webpack-dev-server --config config/webpack.docs.config.js --progress --colors"
   },
   "repository": {
     "type": "git",
