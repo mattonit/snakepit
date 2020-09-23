@@ -4,7 +4,8 @@
   "description": "Snakepit UI Framework for React",
   "scripts": {
     "build:docs": "webpack --config config/webpack.docs.config.js --progress --colors",
-    "dev": "webpack-dev-server --config config/webpack.docs.config.js --progress --colors"
+    "dev": "webpack-dev-server --config config/webpack.docs.config.js --progress --colors",
+    "lint:js": "eslint src/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -25,8 +26,17 @@
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
+    "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "css-loader": "^4.3.0",
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.21.0",
+    "eslint-plugin-react-hooks": "^4.1.2",
     "html-webpack-plugin": "^4.5.0",
     "sass-loader": "^10.0.2",
     "style-loader": "^1.2.1",

@@ -3,4 +3,4 @@ import ReactDOM from 'react-dom';
 
 import Docs from './Docs';
 
-ReactDOM.render(<Docs/>, document.getElementById('root'));
+ReactDOM.render(<Docs />, document.getElementById('root'));
