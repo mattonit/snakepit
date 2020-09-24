@@ -1,0 +1,44 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include media-query($media-breakpoint-sm) {
+    max-width: $wrapper-width-sm;
+  }
+  @include media-query($media-breakpoint-md) {
+    max-width: $wrapper-width-md;
+  }
+  @include media-query($media-breakpoint-lg) {
+    max-width: $wrapper-width-lg;
+  }
+  @include media-query($media-breakpoint-xl) {
+    max-width: $wrapper-width-xl;
+  }
+
+  &-wide {
+    max-width: 100%;
+  }
+}
+
+@each $name, $size in $media-breakpoints {
+  @include media-query($size) {
+
+    $infix: breakpoint-infix($name);
+
+    @for $i from 1 through $cell-count {
+      .cell#{$infix}-#{$i} {
+        position: relative;
+        flex: 0 0 $cell-width * $i;
+        width: 100%;
+        max-width: $cell-width * $i;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+    }
+  }
+}
