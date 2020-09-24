@@ -20,3 +20,19 @@ $wrapper-width-xl: 1140px !default;
 
 $cell-count: 16 !default;
 $cell-width: 100% / $cell-count !default;
+
+// Brand colors
+$primary-color: #09cc8d !default;
+
+// Shades
+$black-color: #141823 !default;
+$grey-color: #808080 !default;
+$white-color: #fff !default;
+$light-grey: #efefef !default;
+
+// Base settings
+$body-bg-color: $white-color !default;
+$body-color: $black-color !default;
+$body-font-size: 1rem !default;
+$body-font-weight: 400 !default;
+$link-color: $black-color !default;
