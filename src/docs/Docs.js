@@ -1,5 +1,5 @@
 import React from 'react';
-import {Wrapper, CellGroup} from 'snakepit';
+import { Wrapper, CellGroup } from 'snakepit';
 
 const Docs = () => (
   <Wrapper>
