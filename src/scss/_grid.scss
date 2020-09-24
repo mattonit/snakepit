@@ -24,6 +24,13 @@
   }
 }
 
+.cell-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
 @each $name, $size in $media-breakpoints {
   @include media-query($size) {
 
