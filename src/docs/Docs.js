@@ -1,11 +1,19 @@
 import React from 'react';
-import { Wrapper, CellGroup } from 'snakepit';
+import { Wrapper, CellGroup, Navbar } from 'snakepit';
 
 const Docs = () => (
-  <Wrapper>
+  <div>
+    <Navbar>
+      <Wrapper>
+        Snakepit
+      </Wrapper>
+    </Navbar>
     <CellGroup>
-      <h1>Hello World</h1>
+      <Wrapper>
+        <h1>Hello World</h1>
+
+      </Wrapper>
     </CellGroup>
-  </Wrapper>
+  </div>
 );
 export default Docs;

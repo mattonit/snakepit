@@ -1,3 +1,9 @@
 /*
  * Docs
  */
+
+@import "variables";
+
+body {
+  background-color: $body-bg-color;
+}
