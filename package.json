@@ -5,6 +5,7 @@
   "scripts": {
     "build:docs": "webpack --config config/webpack.docs.config.js --progress --colors",
     "dev": "webpack-dev-server --config config/webpack.docs.config.js --progress --colors",
+    "lint": "npm run lint:js && npm run lint:scss",
     "lint:js": "eslint src/**/*.js",
     "lint:scss": "stylelint --syntax scss src/scss/**/*.scss"
   },
@@ -19,7 +20,9 @@
   },
   "homepage": "https://github.com/mattonit/snakepit#readme",
   "dependencies": {
+    "classnames": "^2.2.6",
     "node-sass": "^4.14.1",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
@@ -56,7 +59,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint:js"
+      "pre-commit": "npm run lint"
     }
   }
 }
