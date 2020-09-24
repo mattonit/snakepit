@@ -25,7 +25,7 @@ const config = {
   plugins: [
     new HtmlWebpackPlugin({
       template: 'src/docs/assets/index.html'
-    })
+    }),
   ],
   module: {
     rules: [
@@ -36,11 +36,31 @@ const config = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: [
+          'css-loader',
+        ],
       },
       {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].css',
+              context: './',
+              outputPath: './',
+              publicPath: './'
+            }
+          },
+          'extract-loader',
+          'css-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true
+            }
+          },
+        ],
       }
     ]
   }
