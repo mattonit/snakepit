@@ -1,6 +1,9 @@
 import React from 'react';
+import { Wrapper } from 'snakepit';
 
 const Docs = () => (
-  <h1>Hello World</h1>
+  <Wrapper>
+    <h1>Hello World</h1>
+  </Wrapper>
 );
 export default Docs;
