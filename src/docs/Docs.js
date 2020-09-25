@@ -1,19 +1,16 @@
 import React from 'react';
-import { Wrapper, CellGroup, Navbar } from 'snakepit';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Wrapper, Navbar } from 'snakepit';
+import Routes from './routes';
 
 const Docs = () => (
-  <div>
+  <Router>
     <Navbar>
       <Wrapper>
         Snakepit
       </Wrapper>
     </Navbar>
-    <CellGroup>
-      <Wrapper>
-        <h1>Hello World</h1>
-
-      </Wrapper>
-    </CellGroup>
-  </div>
+    <Routes />
+  </Router>
 );
 export default Docs;
