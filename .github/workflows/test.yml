@@ -19,3 +19,9 @@ jobs:
 
       - name: Run ESLint
         run: npm run lint:js
+
+      - name: Run Stylelint
+        run: npm run lint:scss
+
+      - name: Build Docs
+        run: npm build:docs
