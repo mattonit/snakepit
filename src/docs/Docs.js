@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { Wrapper, Navbar } from 'snakepit';
+import { Wrapper, Navbar, Button } from 'snakepit';
 import Routes from './routes';
 
 const Docs = () => (
@@ -8,6 +8,7 @@ const Docs = () => (
     <Navbar>
       <Wrapper>
         Snakepit
+        <Button>asd</Button>
       </Wrapper>
     </Navbar>
     <Routes />

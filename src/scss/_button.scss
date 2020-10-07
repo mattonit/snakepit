@@ -1,0 +1,18 @@
+.btn {
+  display: inline-block;
+  padding: $btn-padding-y $btn-padding-x;
+  font-size: $btn-font-size;
+  font-weight: $btn-font-weight;
+  white-space: nowrap;
+  cursor: pointer;
+  background: transparent;
+  border: 1px transparent solid;
+  border-radius: $btn-border-radius;
+
+  &:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  }
+  &:disabled {
+    pointer-events: none;
+  }
+}
