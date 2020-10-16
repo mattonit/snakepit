@@ -9,8 +9,9 @@ const Docs = () => (
       <Wrapper>
         Snakepit
         <span>
-          <Button className="btn-primary">asd</Button>
-          <Button className="btn-inverse-primary">asd</Button>
+          <Button color="primary">asd</Button>
+          <Button color="primary" inverse>asd</Button>
+          <Button color="primary" outline>asd</Button>
         </span>
       </Wrapper>
     </Navbar>
