@@ -9,7 +9,7 @@ const Docs = () => (
       <Wrapper>
         Snakepit
         <span>
-          <Button color="primary">asd</Button>
+          <Button tag="a" href="#" color="primary">asd</Button>
           <Button color="primary" inverse>asd</Button>
           <Button color="primary" outline>asd</Button>
         </span>

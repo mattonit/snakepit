@@ -11,6 +11,7 @@ const Button = props => {
     inverse,
     outline,
     tag: Tag,
+    ...attributes
   } = props;
 
   const classes = classNames(
@@ -21,7 +22,7 @@ const Button = props => {
     className
   );
 
-  return <Tag className={classes}>{children}</Tag>;
+  return <Tag {...attributes} className={classes}>{children}</Tag>;
 }
 
 Button.propTypes = {

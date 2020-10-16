@@ -14,6 +14,7 @@
     background-color: $color;
 
     &:hover {
+      color: text-color($color);
       background-color: lighten($color, 5%);
     }
 
