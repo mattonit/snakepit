@@ -7,18 +7,28 @@
   cursor: pointer;
   user-select: none;
   background: transparent;
-  border: 1px transparent solid;
+  border: none;
   border-radius: $btn-border-radius;
 
   &:hover {
     box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
   }
+
   &:disabled {
     pointer-events: none;
+  }
+
+  & + & {
+    margin-left: $btn-spacing;
   }
 }
 
 // Solid Buttons
 @each $name, $color in $colors {
   @include make-button($name, $color);
+}
+
+// Outline Buttons
+@each $name, $color in $colors {
+  @include make-outline-button($name, $color);
 }

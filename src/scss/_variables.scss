@@ -22,8 +22,8 @@ $cell-count: 16 !default;
 $cell-width: 100% / $cell-count !default;
 
 // Theme colors
-$primary-color: #09cc8d !default;
-$accent-color: #09cc8d !default;
+$primary-color: #28a5f5 !default;
+$accent-color: #414756 !default;
 $success-color: #6fb201 !default;
 $info-color: #0071b3 !default;
 $warning-color: #ffc700 !default;
@@ -62,5 +62,7 @@ $btn-padding-x: 1rem !default;
 $btn-border-radius: .3rem !default;
 $btn-font-size: .875rem !default;
 $btn-font-weight: 400 !default;
+
+$btn-spacing: .3125rem !default;
 
 $contrasted-threshold: 150 !default;
