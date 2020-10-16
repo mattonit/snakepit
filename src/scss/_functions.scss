@@ -1,3 +1,17 @@
 @function breakpoint-infix($name, $breakpoints: $media-breakpoints) {
   @return if(map-get($media-breakpoints, $name) == 0, "", "-#{$name}");
 }
+
+@function text-color($color, $dark: $black-color, $light: $white-color) {
+  $r: red($color);
+  $g: green($color);
+  $b: blue($color);
+
+  $contrast: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
+
+  @if ($contrast >= $contrasted-threshold) {
+    @return $dark;
+  } @else {
+    @return $light;
+  }
+}

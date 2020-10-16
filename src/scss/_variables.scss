@@ -21,8 +21,22 @@ $wrapper-width-xl: 1140px !default;
 $cell-count: 16 !default;
 $cell-width: 100% / $cell-count !default;
 
-// Brand colors
+// Theme colors
 $primary-color: #09cc8d !default;
+$accent-color: #09cc8d !default;
+$success-color: #6fb201 !default;
+$info-color: #0071b3 !default;
+$warning-color: #ffc700 !default;
+$danger-color: #e61800 !default;
+
+$colors: (
+  primary: $primary-color,
+  accent: $accent-color,
+  success: $success-color,
+  info: $info-color,
+  warning: $warning-color,
+  danger: $danger-color
+) !default;
 
 // Shades
 $black-color: #141823 !default;
@@ -43,8 +57,10 @@ $navbar-padding-y: 1rem !default;
 $navbar-padding-x: null !default;
 
 // Button
-$btn-padding-y: .75rem !default;
-$btn-padding-x: 1.5rem !default;
+$btn-padding-y: .625rem !default;
+$btn-padding-x: 1rem !default;
 $btn-border-radius: .3rem !default;
-$btn-font-size: 1rem !default;
+$btn-font-size: .875rem !default;
 $btn-font-weight: 400 !default;
+
+$contrasted-threshold: 150 !default;

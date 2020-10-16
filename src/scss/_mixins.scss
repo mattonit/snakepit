@@ -7,3 +7,14 @@
     @content;
   }
 }
+
+@mixin make-button($name, $color) {
+  .btn-#{$name} {
+    color: text-color($color);
+    background-color: $color;
+
+    &:focus {
+      background-color: lighten($color, 5%);
+    }
+  }
+}

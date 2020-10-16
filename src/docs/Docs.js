@@ -8,7 +8,7 @@ const Docs = () => (
     <Navbar>
       <Wrapper>
         Snakepit
-        <Button>asd</Button>
+        <Button className="btn-primary">asd</Button>
       </Wrapper>
     </Navbar>
     <Routes />

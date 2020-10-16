@@ -5,6 +5,7 @@
   font-weight: $btn-font-weight;
   white-space: nowrap;
   cursor: pointer;
+  user-select: none;
   background: transparent;
   border: 1px transparent solid;
   border-radius: $btn-border-radius;
@@ -15,4 +16,9 @@
   &:disabled {
     pointer-events: none;
   }
+}
+
+// Solid Buttons
+@each $name, $color in $colors {
+  @include make-button($name, $color);
 }
