@@ -10,7 +10,7 @@ const Docs = () => (
         Snakepit
         <span>
           <Button className="btn-primary">asd</Button>
-          <Button className="btn-outline-accent">asd</Button>
+          <Button className="btn-inverse-primary">asd</Button>
         </span>
       </Wrapper>
     </Navbar>

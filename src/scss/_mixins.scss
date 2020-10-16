@@ -13,8 +13,12 @@
     color: text-color($color);
     background-color: $color;
 
-    &:focus {
+    &:hover {
       background-color: lighten($color, 5%);
+    }
+
+    &:focus {
+      background-color: lighten($color, 10%);
     }
   }
 }
@@ -29,7 +33,22 @@
     }
 
     &:focus {
+      color: text-color($color);
       background-color: lighten($color, 5%);
+    }
+  }
+}
+
+@mixin make-inverse-button($name, $color) {
+  .btn-inverse-#{$name} {
+    color: $color;
+
+    &:hover {
+      background-color: rgba($color, .08);
+    }
+
+    &:focus {
+      background-color: rgba($color, .2);
     }
   }
 }
