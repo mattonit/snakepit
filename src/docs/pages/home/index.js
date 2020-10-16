@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from 'snakepit';
+import { Wrapper, Button } from 'snakepit';
 
 const HomePage = () => {
   return(
-    <div>
+    <Wrapper>
       <h1>Home</h1>
       <Link to="/docs/getting-started/">Getting Started</Link>
 
-      <div style={{marginTop: 20}}>
+      <div className="mt-3">
         <Button color="primary">Primary</Button>
         <Button color="accent">Accent</Button>
         <Button color="info">Info</Button>
@@ -17,7 +17,7 @@ const HomePage = () => {
         <Button color="warning">Warning</Button>
       </div>
 
-      <div style={{marginTop: 20}}>
+      <div className="mt-3">
         <Button color="primary" outline>Primary</Button>
         <Button color="accent" outline>Accent</Button>
         <Button color="info" outline>Info</Button>
@@ -26,7 +26,7 @@ const HomePage = () => {
         <Button color="warning" outline>Warning</Button>
       </div>
 
-      <div style={{marginTop: 20}}>
+      <div className="mt-3">
         <Button color="primary" inverse>Primary</Button>
         <Button color="accent" inverse>Accent</Button>
         <Button color="info" inverse>Info</Button>
@@ -34,7 +34,7 @@ const HomePage = () => {
         <Button color="danger" inverse>Danger</Button>
         <Button color="warning" inverse>Warning</Button>
       </div>
-    </div>
+    </Wrapper>
 
   );
 };
