@@ -4,6 +4,7 @@
   "description": "Snakepit UI Framework for React",
   "scripts": {
     "build:docs": "webpack --config config/webpack.docs.config.js --progress --colors",
+    "build:scss": "node-sass src/scss -o dist/",
     "dev": "webpack-dev-server --config config/webpack.docs.config.js --progress --colors",
     "lint": "npm run lint:js && npm run lint:scss",
     "lint:js": "eslint src/**/*.js",
