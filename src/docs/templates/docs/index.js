@@ -1,6 +1,6 @@
 import React from 'react';
 import {Wrapper} from 'snakepit';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 const Docs = props => {
 
@@ -14,13 +14,15 @@ const Docs = props => {
         <ul>
           <li>
             <strong>Getting Started</strong>
+            <ul>
+              <li><NavLink to="/docs/getting-started/">Introduction</NavLink></li>
+            </ul>
           </li>
           <li>
             <strong>Components</strong>
             <ul>
-              <li><Link>Button</Link></li>
-              <li><Link>Heading</Link></li>
-              <li><Link>Navbar</Link></li>
+              <li><NavLink to="/docs/components/button/">Button</NavLink></li>
+              <li><NavLink to="/docs/components/navbar/">Navbar</NavLink></li>
             </ul>
           </li>
         </ul>

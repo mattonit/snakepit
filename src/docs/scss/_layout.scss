@@ -19,8 +19,8 @@
 }
 
 .docs-footer {
-  border-top: 2px solid $accent-color;
   background-color: #fff;
   color: $accent-color;
   font-size: .875rem;
+  box-shadow: 0 -1rem 1rem rgba($accent-color,.05);
 }

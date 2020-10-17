@@ -34,7 +34,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  color: false,
+  color: null,
   inverse: false,
   outline: false,
   tag: 'button'
