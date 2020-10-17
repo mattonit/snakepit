@@ -17,3 +17,10 @@
 .docs-content {
   grid-area: main;
 }
+
+.docs-footer {
+  border-top: 2px solid $accent-color;
+  background-color: #fff;
+  color: $accent-color;
+  font-size: .875rem;
+}

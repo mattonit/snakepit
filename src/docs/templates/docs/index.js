@@ -1,6 +1,6 @@
 import React from 'react';
 import {Wrapper} from 'snakepit';
-import {Link} from "react-router-dom";
+import {Link} from 'react-router-dom';
 
 const Docs = props => {
 
