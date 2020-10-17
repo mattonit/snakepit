@@ -4,8 +4,17 @@ import postcss from 'rollup-plugin-postcss';
 import babel from 'rollup-plugin-babel';
 import pkg from './package.json';
 import commonjs from 'rollup-plugin-commonjs';
+import path from 'path';
 
 const dependencies = Object.keys(require("./package.json").dependencies);
+
+const banner =
+  `/*!
+ * Snakepit v${pkg.version}
+ * Copyright ${new Date().getFullYear()} Mattonit
+ * Licensed under MIT
+ */
+`;
 
 const plugins = [
   replace({'process.env.NODE_ENV': JSON.stringify('production')}),
@@ -28,16 +37,18 @@ const plugins = [
 export default [
   {
     external: dependencies,
-    input: 'src/index.js',
+    input: path.resolve(__dirname, `./src/index.js`),
     plugins,
     output: [
       {
         file: pkg.main,
-        format: 'cjs'
+        format: 'cjs',
+        banner,
       },
       {
         file: pkg.module,
-        format: 'es'
+        format: 'es',
+        banner,
       }
     ]
   }

@@ -7,12 +7,22 @@ const Cell = props => {
   const {
     children,
     className,
+    md,
+    lg,
+    size,
+    sm,
     tag: Tag,
+    xl,
   } = props;
 
   const classes = classNames(
     className,
-    'cell'
+    size ? `cell-${size}` : false,
+    sm ? `cell-sm-${sm}` : false,
+    md ? `cell-md-${md}` : false,
+    lg ? `cell-lg-${lg}` : false,
+    xl ? `cell-xl-${xl}` : false,
+    !size && !sm && !md && !lg && !xl ? 'cell' : false,
   );
 
   return <Tag className={classes}>{children}</Tag>
@@ -21,12 +31,21 @@ const Cell = props => {
 
 Cell.propTypes = {
   className: PropTypes.string,
-  tag: PropTypes.string
+  md: PropTypes.string,
+  lg: PropTypes.string,
+  size: PropTypes.string,
+  sm: PropTypes.string,
+  tag: PropTypes.string,
+  xl: PropTypes.string
 }
 
 Cell.defaultProps = {
+  md: null,
+  lg: null,
+  size: null,
+  sm: null,
   tag: 'div',
-  wide: false
+  xs: null
 }
 
 export default Cell;
