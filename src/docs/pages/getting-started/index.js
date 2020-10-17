@@ -1,8 +1,9 @@
 import React from 'react';
+import {Heading} from 'snakepit';
 
 const GettingStarted = () => {
   return(
-    <h1>Getting Started</h1>
+    <Heading level="1">Getting Started</Heading>
   );
 };
 export default GettingStarted;

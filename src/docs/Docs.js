@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import { Wrapper, Navbar, Button } from 'snakepit';
 import Routes from './routes';
 
@@ -7,12 +7,10 @@ const Docs = () => (
   <Router>
     <Navbar>
       <Wrapper>
-        Snakepit
-        <span>
-          <Button href="/" color="primary">asd</Button>
-          <Button color="primary" inverse>asd</Button>
-          <Button color="primary" outline>asd</Button>
-        </span>
+        <Link to="/">Snakepit</Link>
+        <Link to="/docs/getting-started/">
+          <Button color="primary" outline>Get Started</Button>
+        </Link>
       </Wrapper>
     </Navbar>
     <Routes />

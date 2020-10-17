@@ -2,7 +2,14 @@
  * Docs
  */
 
+// Import required utils
+@import "../../scss/variables";
+@import "../../scss/mixins";
+@import "../../scss/functions";
+
+// Docs components
 @import "variables";
+@import "layout";
 
 body {
   background-color: $body-bg-color;
