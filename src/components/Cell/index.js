@@ -16,13 +16,13 @@ const Cell = props => {
   } = props;
 
   const classes = classNames(
-    className,
     size ? `cell-${size}` : false,
     sm ? `cell-sm-${sm}` : false,
     md ? `cell-md-${md}` : false,
     lg ? `cell-lg-${lg}` : false,
     xl ? `cell-xl-${xl}` : false,
     !size && !sm && !md && !lg && !xl ? 'cell' : false,
+    className,
   );
 
   return <Tag className={classes}>{children}</Tag>

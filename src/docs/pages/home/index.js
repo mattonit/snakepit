@@ -1,12 +1,12 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {Wrapper, CellGroup, Cell, Button} from 'snakepit';
+import {Wrapper, CellGroup, Cell, Heading, Button} from 'snakepit';
 
 const HomePage = () => {
   return (
     <Wrapper>
 
-      <h1>Home</h1>
+      <Heading level="1">Home</Heading>
       <Link to="/docs/getting-started/">Getting Started</Link>
 
       <CellGroup>

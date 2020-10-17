@@ -82,3 +82,24 @@ $btn-font-weight: 400 !default;
 $btn-spacing: .3125rem !default;
 
 $contrasted-threshold: 150 !default;
+
+// Typography
+$heading-xs-font-size: 1.25rem !default;
+$heading-sm-font-size: 1.5rem !default;
+$heading-md-font-size: 1.75rem !default;
+$heading-lg-font-size: 2rem !default;
+$heading-xl-font-size: 2.5rem !default;
+
+$heading-margin-top: 0 !default;
+$heading-margin-bottom: 1rem !default;
+$heading-line-height: 1.2 !default;
+$heading-letter-spacing: -.4px !default
+$heading-font-weight: 500 !default;
+
+$headings-font-size: (
+  xs: $heading-xs-font-size,
+  sm: $heading-sm-font-size,
+  md: $heading-md-font-size,
+  lg: $heading-xl-font-size,
+  xl: $heading-xl-font-size,
+) !default;

@@ -1,0 +1,16 @@
+%heading {
+  margin-top: $heading-margin-top;
+  margin-bottom: $heading-margin-bottom;
+  line-height: $heading-line-height;
+  letter-spacing: $heading-letter-spacing;
+  font-weight: $heading-font-weight;
+}
+
+.heading {
+  @each $name, $size in $headings-font-size {
+    &-#{$name} {
+      @extend %heading;
+      font-size: $size;
+    }
+  }
+}
