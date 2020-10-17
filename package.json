@@ -12,7 +12,8 @@
     "dev": "webpack-dev-server --config config/webpack.docs.config.js --progress --colors",
     "lint": "npm run lint:js && npm run lint:scss",
     "lint:js": "eslint src/**/*.js",
-    "lint:scss": "stylelint --syntax scss src/scss/**/*.scss"
+    "lint:scss": "stylelint --syntax scss src/scss/**/*.scss",
+    "lint:scss:docs": "stylelint --syntax scss src/docs/scss/**/*.scss"
   },
   "repository": {
     "type": "git",
