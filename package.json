@@ -5,6 +5,7 @@
   "main": "dist/snakepit.js",
   "module": "dist/snakepit.esm.js",
   "scripts": {
+    "build": "npm run build:js && npm run build:scss",
     "build:docs": "webpack --config config/webpack.docs.config.js --progress --colors",
     "build:js": "rollup -c",
     "build:scss": "node-sass src/scss -o dist/",
