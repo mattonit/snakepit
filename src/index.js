@@ -4,6 +4,7 @@ import CellGroup from './components/CellGroup';
 import Heading from './components/Heading';
 import Navbar from './components/Navbar';
 import Wrapper from './components/Wrapper';
+import Text from './components/Text';
 
 export {
   Button,
@@ -11,5 +12,6 @@ export {
   CellGroup,
   Heading,
   Navbar,
-  Wrapper
+  Wrapper,
+  Text
 };

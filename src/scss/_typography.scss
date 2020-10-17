@@ -14,3 +14,23 @@
     }
   }
 }
+
+@each $breakpoint, $size in $media-breakpoints {
+  @include media-query($size) {
+
+    $infix: breakpoint-infix($breakpoint);
+
+    .text#{$infix}-left {
+      text-align: left;
+    }
+    .text#{$infix}-center {
+      text-align: center;
+    }
+    .text#{$infix}-right {
+      text-align: right;
+    }
+    .text#{$infix}-justify {
+      text-align: justify;
+    }
+  }
+}
