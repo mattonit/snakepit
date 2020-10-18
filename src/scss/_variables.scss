@@ -76,10 +76,15 @@ $navbar-z-index: 999 !default;
 // Button
 $btn-padding-y: .725rem !default;
 $btn-padding-x: 1rem !default;
+$btn-sm-padding-y: .5rem !default;
+$btn-sm-padding-x: .75rem !default;
+$btn-lg-padding-y: 1rem !default;
+$btn-lg-padding-x: 1.25rem !default;
 $btn-border-radius: .3rem !default;
 $btn-font-size: .875rem !default;
+$btn-sm-font-size: .7rem !default;
+$btn-lg-font-size: 1.25rem !default;
 $btn-font-weight: 400 !default;
-
 $btn-spacing: .3125rem !default;
 
 $contrasted-threshold: 150 !default;

@@ -26,6 +26,22 @@
   & + & {
     margin-left: $btn-spacing;
   }
+
+  // Button sizes
+  &-sm {
+    padding: $btn-sm-padding-y $btn-sm-padding-x;
+    font-size: $btn-sm-font-size;
+  }
+
+  &-lg {
+    padding: $btn-lg-padding-y $btn-lg-padding-x;
+    font-size: $btn-lg-font-size;
+  }
+
+  &-block {
+    display: block;
+    width: 100%;
+  }
 }
 
 // Solid Buttons
