@@ -6,8 +6,8 @@ const CardPage = props => {
     <div>
       <CellGroup>
         <Cell>
-          <Heading>Card</Heading>
-          <Text className="docs-page-desc">The card is an elegant way to display information in an organized way.</Text>
+          <Heading className="mb-1">Card</Heading>
+          <Text className="docs-page-desc mt-0">The card is an elegant way to display information in an organized way.</Text>
         </Cell>
       </CellGroup>
       <CellGroup>
