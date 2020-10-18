@@ -6,9 +6,11 @@ import CardTitle from './components/CardTitle';
 import Cell from './components/Cell';
 import CellGroup from './components/CellGroup';
 import Heading from './components/Heading';
+import Nav from './components/Nav';
 import Navbar from './components/Navbar';
-import Wrapper from './components/Wrapper';
+import NavItem from './components/NavItem';
 import Text from './components/Text';
+import Wrapper from './components/Wrapper';
 
 export {
   Button,
@@ -19,7 +21,9 @@ export {
   Cell,
   CellGroup,
   Heading,
+  Nav,
+  NavItem,
   Navbar,
-  Wrapper,
-  Text
+  Text,
+  Wrapper
 };

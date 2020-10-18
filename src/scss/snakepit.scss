@@ -2,13 +2,17 @@
  * Snakepit
  */
 
+// Functions, variables, utilities
 @import "variables";
 @import "mixins";
 @import "functions";
-@import "base";
 @import "utilities";
-@import "grid";
-@import "navbar";
+
+// Components
+@import "base";
 @import "button";
 @import "card";
+@import "grid";
+@import "nav";
+@import "navbar";
 @import "typography";
