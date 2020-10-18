@@ -9,9 +9,7 @@
 
 // Docs components
 @import "variables";
+@import "base";
 @import "layout";
 @import "home";
 
-body {
-  background-color: $body-bg-color;
-}

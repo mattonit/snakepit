@@ -22,6 +22,7 @@ const Docs = props => {
             <strong>Components</strong>
             <ul>
               <li><NavLink to="/docs/components/button/">Button</NavLink></li>
+              <li><NavLink to="/docs/components/card/">Card</NavLink></li>
               <li><NavLink to="/docs/components/navbar/">Navbar</NavLink></li>
             </ul>
           </li>

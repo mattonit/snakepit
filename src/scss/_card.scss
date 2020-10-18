@@ -1,0 +1,29 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  color: $black-color;
+  background: $white-color;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, .1);
+
+  &-content {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+  }
+
+  &-title {
+    padding: .75rem 0;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  &-text {
+    margin-top: 0;
+    font-size: .9rem;
+    color: $grey-color;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
