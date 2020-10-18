@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Wrapper, Navbar, Button } from 'snakepit';
 
 const Header = () => (
-  <Navbar>
+  <Navbar sticky>
     <Wrapper>
       <Link to="/">Snakepit</Link>
       <Link to="/docs/getting-started/">

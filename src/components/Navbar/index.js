@@ -7,12 +7,16 @@ const Navbar = props => {
   const {
     children,
     className,
+    fixed,
+    sticky,
     tag: Tag,
   } = props;
 
   const classes = classNames(
+    'navbar',
+    fixed ? 'fixed-top': false,
+    sticky ? 'sticky-top': false,
     className,
-    'navbar'
   );
 
   return <Tag className={classes}>{children}</Tag>
@@ -21,11 +25,15 @@ const Navbar = props => {
 
 Navbar.propTypes = {
   className: PropTypes.string,
+  fixed: PropTypes.bool,
+  sticky: PropTypes.bool,
   tag: PropTypes.string
 }
 
 Navbar.defaultProps = {
-  tag: 'nav'
+  fixed: false,
+  sticky: false,
+  tag: 'nav',
 }
 
 export default Navbar;

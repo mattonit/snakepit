@@ -11,4 +11,25 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  &-logo {
+    display: inline-block;
+    color: inherit;
+  }
+
+  &.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: $navbar-z-index;
+  }
+
+  &.sticky-top {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: $navbar-z-index;
+  }
 }
