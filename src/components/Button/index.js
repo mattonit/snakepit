@@ -41,7 +41,7 @@ Button.propTypes = {
 
 Button.defaultProps = {
   block: false,
-  color: null,
+  color: false,
   inverse: false,
   outline: false,
   size: null,
