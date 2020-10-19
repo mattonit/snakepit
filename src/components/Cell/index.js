@@ -13,6 +13,7 @@ const Cell = props => {
     sm,
     tag: Tag,
     xl,
+    xxl,
   } = props;
 
   const classes = classNames(
@@ -21,7 +22,8 @@ const Cell = props => {
     md ? `cell-md-${md}` : false,
     lg ? `cell-lg-${lg}` : false,
     xl ? `cell-xl-${xl}` : false,
-    !size && !sm && !md && !lg && !xl ? 'cell' : false,
+    xxl ? `cell-xxl-${xxl}` : false,
+    !size && !sm && !md && !lg && !xl && !xxl ? 'cell' : false,
     className,
   );
 
@@ -36,7 +38,8 @@ Cell.propTypes = {
   size: PropTypes.string,
   sm: PropTypes.string,
   tag: PropTypes.string,
-  xl: PropTypes.string
+  xl: PropTypes.string,
+  xxl: PropTypes.string
 }
 
 Cell.defaultProps = {
@@ -45,7 +48,8 @@ Cell.defaultProps = {
   size: null,
   sm: null,
   tag: 'div',
-  xs: null
+  xs: null,
+  xxl: null
 }
 
 export default Cell;
