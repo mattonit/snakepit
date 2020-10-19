@@ -4,6 +4,9 @@
   "description": "Snakepit UI Framework for React",
   "main": "dist/snakepit.js",
   "module": "dist/snakepit.esm.js",
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "build": "npm run build:js && npm run build:scss",
     "build:docs": "webpack --config config/webpack.docs.config.js --progress --colors",
