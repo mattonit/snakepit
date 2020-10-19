@@ -6,6 +6,7 @@ import CardTitle from './components/CardTitle';
 import Cell from './components/Cell';
 import CellGroup from './components/CellGroup';
 import Heading from './components/Heading';
+import Input from './components/Input';
 import Nav from './components/Nav';
 import Navbar from './components/Navbar';
 import NavItem from './components/NavItem';
@@ -21,6 +22,7 @@ export {
   Cell,
   CellGroup,
   Heading,
+  Input,
   Nav,
   NavItem,
   Navbar,

@@ -7,6 +7,7 @@ import DocsTemplate from './templates/docs';
 import ButtonPage from './pages/components/ButtonPage';
 import NavbarPage from './pages/components/NavbarPage';
 import CardPage from './pages/components/CardPage';
+import InputPage from './pages/forms/InputPage';
 
 const Routes = () => (
   <Switch>
@@ -16,6 +17,7 @@ const Routes = () => (
       <Route path="/docs/components/button/" component={ButtonPage} />
       <Route path="/docs/components/card/" component={CardPage} />
       <Route path="/docs/components/navbar/" component={NavbarPage} />
+      <Route path="/docs/forms/input/" component={InputPage} />
     </DocsTemplate>
   </Switch>
 );

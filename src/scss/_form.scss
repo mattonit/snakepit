@@ -1,0 +1,33 @@
+.form-field {
+  display: block;
+  width: 100%;
+  padding: $form-field-padding-y $form-field-padding-x;
+  margin-bottom: $form-field-margin-bottom;
+  font-size: $form-field-font-size;
+  line-height: 1.5;
+  color: $black-color;
+  border: $form-field-border-width solid $form-field-border-color;
+  border-radius: $form-field-radius;
+  transition: border-color .3s ease;
+
+  &:hover {
+    border-color: $form-field-hover-border-color;
+  }
+
+  &:focus {
+    border-color: $form-field-active-border-color;
+    outline: 0;
+  }
+
+  &.invalid {
+    background: rgba($form-field-invalid-border-color, .075);
+    border-color: $form-field-invalid-border-color;
+  }
+
+  &[disabled] {
+    background-color: $form-field-bg-disabled;
+    &:hover {
+      border-color: $form-field-bg-disabled;
+    }
+  }
+}

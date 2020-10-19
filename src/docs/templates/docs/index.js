@@ -26,6 +26,12 @@ const Docs = props => {
               <li><NavLink to="/docs/components/navbar/">Navbar</NavLink></li>
             </ul>
           </li>
+          <li>
+            <strong>Forms</strong>
+            <ul>
+              <li><NavLink to="/docs/forms/input/">Input</NavLink></li>
+            </ul>
+          </li>
         </ul>
       </div>
       <div className="docs-content">

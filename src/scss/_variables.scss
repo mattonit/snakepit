@@ -112,3 +112,16 @@ $headings-font-size: (
   lg: $heading-lg-font-size,
   xl: $heading-xl-font-size,
 ) !default;
+
+// Forms
+$form-field-padding-y: .3125rem !default;
+$form-field-padding-x: .625rem !default;
+$form-field-margin-bottom: .75rem !default;
+$form-field-font-size: .875rem !default;
+$form-field-radius: 3px !default;
+$form-field-border-width: 1px !default;
+$form-field-border-color: $light-grey !default;
+$form-field-hover-border-color: $grey-color !default;
+$form-field-active-border-color: $primary-color !default;
+$form-field-invalid-border-color: $danger-color !default;
+$form-field-bg-disabled: $light-grey !default;
