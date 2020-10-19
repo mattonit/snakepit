@@ -102,7 +102,7 @@ Button.propTypes = {
 };
 Button.defaultProps = {
   block: false,
-  color: null,
+  color: false,
   inverse: false,
   outline: false,
   size: null,
@@ -279,6 +279,33 @@ Heading.defaultProps = {
   size: 'xl'
 };
 
+const Input = props => {
+  const {
+    children,
+    className,
+    invalid,
+    success,
+    tag: Tag
+  } = props,
+        attributes = _objectWithoutProperties(props, ["children", "className", "invalid", "success", "tag"]);
+
+  const classes = classNames__default['default']('form-field', invalid ? 'invalid' : false, success ? 'success' : false, className);
+  return /*#__PURE__*/React__default['default'].createElement(Tag, _extends({
+    className: classes
+  }, attributes), children);
+};
+
+Input.propTypes = {
+  invalid: PropTypes__default['default'].bool,
+  success: PropTypes__default['default'].bool,
+  tag: PropTypes__default['default'].string
+};
+Input.defaultProps = {
+  invalid: false,
+  success: false,
+  tag: 'input'
+};
+
 const Nav = props => {
   const {
     children,
@@ -402,6 +429,7 @@ exports.CardTitle = CardTitle;
 exports.Cell = Cell;
 exports.CellGroup = CellGroup;
 exports.Heading = Heading;
+exports.Input = Input;
 exports.Nav = Nav;
 exports.NavItem = NavItem;
 exports.Navbar = Navbar;

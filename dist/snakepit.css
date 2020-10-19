@@ -1269,6 +1269,7 @@ a:hover {
   padding: 0.725rem 1rem;
   font-size: 0.875rem;
   font-weight: 400;
+  line-height: 1;
   white-space: nowrap;
   cursor: pointer;
   user-select: none;
@@ -1464,6 +1465,33 @@ a:hover {
     color: #808080; }
     .card-text:last-child {
       margin-bottom: 0; }
+
+.form-field {
+  display: block;
+  width: 100%;
+  padding: 0.3125rem 0.625rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #141823;
+  border: 1px solid #efefef;
+  border-radius: 3px;
+  transition: border-color .3s ease; }
+  .form-field:hover {
+    border-color: #808080; }
+  .form-field:focus {
+    border-color: #28a5f5;
+    outline: 0; }
+  .form-field.success {
+    background: rgba(40, 199, 111, 0.075);
+    border-color: #28c76f; }
+  .form-field.invalid {
+    background: rgba(230, 24, 0, 0.075);
+    border-color: #e61800; }
+  .form-field[disabled] {
+    background-color: #efefef; }
+    .form-field[disabled]:hover {
+      border-color: #efefef; }
 
 .wrapper {
   position: relative;
