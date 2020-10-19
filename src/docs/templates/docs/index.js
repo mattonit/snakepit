@@ -1,5 +1,5 @@
 import React from 'react';
-import {Wrapper} from 'snakepit';
+import {CellGroup, Wrapper} from 'snakepit';
 import {NavLink} from 'react-router-dom';
 
 const Docs = props => {
@@ -9,9 +9,9 @@ const Docs = props => {
   } = props;
 
   return (
-    <Wrapper wide className="docs-layout my-md-4">
+    <Wrapper className="docs-layout my-md-4">
       <div className="docs-sidebar">
-        <ul>
+        <ul className="p-0">
           <li>
             <strong>Getting Started</strong>
             <ul>

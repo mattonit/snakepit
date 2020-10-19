@@ -18,6 +18,9 @@
   @include media-query($media-breakpoint-xl) {
     max-width: $wrapper-width-xl;
   }
+  @include media-query($media-breakpoint-xxl) {
+    max-width: $wrapper-width-xxl;
+  }
 
   &-wide {
     max-width: 100%;

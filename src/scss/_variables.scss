@@ -4,19 +4,22 @@ $media-breakpoint-sm: 576px !default;
 $media-breakpoint-md: 768px !default;
 $media-breakpoint-lg: 992px !default;
 $media-breakpoint-xl: 1200px !default;
+$media-breakpoint-xxl: 1400px !default;
 
 $media-breakpoints: (
   xs: $media-breakpoint-xs,
   sm: $media-breakpoint-sm,
   md: $media-breakpoint-md,
   lg: $media-breakpoint-lg,
-  xl: $media-breakpoint-xl
+  xl: $media-breakpoint-xl,
+  xxl: $media-breakpoint-xxl,
 ) !default;
 
 $wrapper-width-sm: 540% !default;
 $wrapper-width-md: 720px !default;
 $wrapper-width-lg: 960px !default;
 $wrapper-width-xl: 1140px !default;
+$wrapper-width-xxl: 1320px !default;
 
 $cell-count: 16 !default;
 $cell-width: 100% / $cell-count !default;
