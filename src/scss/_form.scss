@@ -19,6 +19,11 @@
     outline: 0;
   }
 
+  &.success {
+    background: rgba($form-field-success-border-color, .075);
+    border-color: $form-field-success-border-color;
+  }
+
   &.invalid {
     background: rgba($form-field-invalid-border-color, .075);
     border-color: $form-field-invalid-border-color;

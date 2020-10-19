@@ -16,6 +16,7 @@ const InputPage = props => {
 
           <Input />
           <Input disabled />
+          <Input success />
           <Input invalid />
 
         </Cell>

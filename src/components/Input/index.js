@@ -7,6 +7,7 @@ const Input = props => {
     children,
     className,
     invalid,
+    success,
     tag: Tag,
     ...attributes
   } = props;
@@ -14,6 +15,7 @@ const Input = props => {
   const classes = classNames(
     'form-field',
     invalid ? 'invalid' : false,
+    success ? 'success' : false,
     className
   );
 
@@ -22,11 +24,13 @@ const Input = props => {
 
 Input.propTypes = {
   invalid: PropTypes.bool,
+  success: PropTypes.bool,
   tag: PropTypes.string,
 }
 
 Input.defaultProps = {
   invalid: false,
+  success: false,
   tag: 'input'
 }
 
