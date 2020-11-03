@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, Card, CardContent, CardText, CardTitle, Cell, CellGroup, Heading, Text, Wrapper} from 'snakepit';
+import {Button, Card, CardContent, CardText, CardTitle, Cell, CellGroup, Heading, Text, Wrapper} from 'motif.js';
 
 const CardPage = props => {
   return (

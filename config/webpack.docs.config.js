@@ -19,7 +19,7 @@ const config = {
   },
   resolve: {
     alias: {
-      'snakepit': path.resolve('./src/index.js')
+      'motif.js': path.resolve('./src/index.js')
     }
   },
   plugins: [

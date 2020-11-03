@@ -10,7 +10,7 @@ const dependencies = Object.keys(require("./package.json").dependencies);
 
 const banner =
   `/*!
- * Snakepit v${pkg.version}
+ * Motif v${pkg.version}
  * Copyright ${new Date().getFullYear()} Mattonit
  * Licensed under MIT
  */

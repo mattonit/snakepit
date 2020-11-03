@@ -1,5 +1,5 @@
 import React from 'react';
-import {Heading} from 'snakepit';
+import {Heading} from 'motif.js';
 
 const GettingStarted = () => {
   return(

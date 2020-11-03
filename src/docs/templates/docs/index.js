@@ -1,5 +1,5 @@
 import React from 'react';
-import {CellGroup, Wrapper} from 'snakepit';
+import {CellGroup, Wrapper} from 'motif.js';
 import {NavLink} from 'react-router-dom';
 
 const Docs = props => {

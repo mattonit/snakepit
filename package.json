@@ -1,9 +1,9 @@
 {
-  "name": "snakepit",
-  "version": "0.0.1",
+  "name": "motif.js",
+  "version": "0.0.2",
   "description": "Snakepit UI Framework for React",
-  "main": "dist/snakepit.js",
-  "module": "dist/snakepit.esm.js",
+  "main": "dist/motif.js",
+  "module": "dist/motif.esm.js",
   "files": [
     "dist/*"
   ],
@@ -20,14 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mattonit/snakepit.git"
+    "url": "git+https://github.com/mattonit/motif.git"
   },
   "author": "mattonit",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mattonit/snakepit/issues"
+    "url": "https://github.com/mattonit/motif/issues"
   },
-  "homepage": "https://github.com/mattonit/snakepit#readme",
+  "homepage": "https://github.com/mattonit/motif#readme",
   "dependencies": {
     "classnames": "^2.2.6",
     "node-sass": "^4.14.1",

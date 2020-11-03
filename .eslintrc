@@ -19,7 +19,7 @@
       "alias": {
         "map": [
           [
-            "snakepit",
+            "motif.js",
             "./src/index.js"
           ]
         ]

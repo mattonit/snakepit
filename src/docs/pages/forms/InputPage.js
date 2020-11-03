@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heading, CellGroup, Cell, Text, Input } from 'snakepit';
+import { Heading, CellGroup, Cell, Text, Input } from 'motif.js';
 
 const InputPage = props => {
   return(

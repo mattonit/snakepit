@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {Wrapper, CellGroup, Cell, Heading, Button, Text} from 'snakepit';
+import {Wrapper, CellGroup, Cell, Heading, Button, Text} from 'motif.js';
 
 const HomePage = () => {
   return (
@@ -11,7 +11,7 @@ const HomePage = () => {
       <Wrapper>
 
         <Heading level="1">Home</Heading>
-        <Text>Snakepit - modern UI library for React.js</Text>
+        <Text>Motif.js - modern UI library for React.js</Text>
         <Link to="/docs/getting-started/">Getting Started</Link>
 
         <CellGroup>
