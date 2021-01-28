@@ -19,8 +19,7 @@ const banner =
 const plugins = [
   replace({'process.env.NODE_ENV': JSON.stringify('production')}),
   nodeResolve({
-    jsnext: true,
-    main: true
+    mainFields: ['module', 'main'],
   }),
   commonjs({
     include: 'node_modules/**'

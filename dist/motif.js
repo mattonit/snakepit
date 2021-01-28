@@ -1,6 +1,6 @@
 /*!
  * Motif v0.0.2
- * Copyright 2020 Mattonit
+ * Copyright 2021 Mattonit
  * Licensed under MIT
  */
 
