@@ -1,12 +1,9 @@
 {
   "name": "motif.js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Snakepit UI Framework for React",
   "main": "dist/motif.js",
   "module": "dist/motif.esm.js",
-  "files": [
-    "dist/*"
-  ],
   "scripts": {
     "build": "npm run build:js && npm run build:scss",
     "build:docs": "webpack --config config/webpack.docs.config.js --progress --colors",
