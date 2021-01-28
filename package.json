@@ -1,6 +1,6 @@
 {
   "name": "motif.js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Snakepit UI Framework for React",
   "main": "dist/motif.js",
   "module": "dist/motif.esm.js",
@@ -30,7 +30,7 @@
   "homepage": "https://github.com/mattonit/motif#readme",
   "dependencies": {
     "classnames": "^2.2.6",
-    "node-sass": "^5.0.0",
+    "node-sass": "^4.8.3",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
