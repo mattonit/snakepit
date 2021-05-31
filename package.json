@@ -9,7 +9,7 @@
     "build:docs": "webpack --config config/webpack.docs.config.js --progress",
     "build:js": "rollup -c",
     "build:scss": "node-sass src/scss -o dist/",
-    "dev": "webpack-dev-server --config config/webpack.docs.config.js --progress",
+    "dev": "webpack serve --config config/webpack.docs.config.js --progress",
     "lint": "npm run lint:js && npm run lint:scss && npm run lint:scss:docs",
     "lint:js": "eslint src/**/*.js",
     "lint:scss": "stylelint --syntax scss src/scss/**/*.scss",
