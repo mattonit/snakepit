@@ -1,7 +1,7 @@
 {
   "name": "motif.js",
   "version": "0.0.4",
-  "description": "Snakepit UI Framework for React",
+  "description": "Motif.js - UI Framework for React",
   "main": "dist/motif.js",
   "module": "dist/motif.esm.js",
   "scripts": {
