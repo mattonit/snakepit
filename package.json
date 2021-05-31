@@ -55,7 +55,7 @@
     "file-loader": "^6.1.0",
     "html-webpack-plugin": "^4.5.0",
     "husky": "^4.3.0",
-    "rollup": "^2.32.0",
+    "rollup": "^2.50.5",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
