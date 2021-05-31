@@ -24,6 +24,7 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      inject: true,
       template: 'src/docs/assets/index.html'
     }),
   ],
