@@ -1,0 +1,35 @@
+name: Docs
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v2
+
+      - name: Set Node.js version
+        uses: actions/setup-node@v2
+
+      - name: Set up npm cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ matrix.node }}-${{ hashFiles('package.json') }}-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-${{ matrix.node }}-${{ hashFiles('package.json') }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Lint Docs styles
+        run: npm run lint:scss:docs
+
+      - name: Build Docs
+        run: npm run build:docs
