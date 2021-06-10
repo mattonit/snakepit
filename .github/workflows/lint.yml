@@ -1,4 +1,4 @@
-name: Test
+name: Lint
 
 on: [push, pull_request]
 
@@ -31,5 +31,3 @@ jobs:
       - name: Run Stylelint
         run: npm run lint:scss
 
-      - name: Build Docs
-        run: npm run build:docs
