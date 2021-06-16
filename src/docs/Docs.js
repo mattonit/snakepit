@@ -1,14 +1,18 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Routes from './routes';
 import Header from './partials/header';
+import Routes from './routes';
 import Footer from './partials/footer';
 
-const Docs = () => (
+import '../scss/motif.scss';
+import './scss/docs.scss';
+
+ReactDOM.render(
   <Router>
     <Header />
     <Routes />
     <Footer />
-  </Router>
-);
-export default Docs;
+  </Router>,
+  document.querySelector('#root')
+)

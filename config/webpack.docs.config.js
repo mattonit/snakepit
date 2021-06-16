@@ -11,22 +11,22 @@ const config = {
     hot: true,
     contentBase: './docs/',
   },
-  entry: './src/docs/index.js',
+  entry: './src/docs/index.ts',
   output: {
     filename: 'docs.js',
     path: path.resolve('./docs/'),
-    publicPath: '/'
+    publicPath: '/',
   },
   resolve: {
     alias: {
-      'motif.js': path.resolve('./src/index.js')
+      'motif.js': path.resolve('./src/index.js'),
     },
     extensions: ['.tsx', '.ts', '.js'],
   },
   plugins: [
     new HtmlWebpackPlugin({
       inject: true,
-      template: 'src/docs/assets/index.html'
+      template: 'src/docs/assets/index.html',
     }),
   ],
   module: {
@@ -39,7 +39,7 @@ const config = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: 'babel-loader'
+        use: 'babel-loader',
       },
       {
         test: /\.css$/,
@@ -56,16 +56,16 @@ const config = {
               name: '[name].css',
               context: './',
               outputPath: './',
-              publicPath: './'
-            }
+              publicPath: './',
+            },
           },
           'extract-loader',
           'css-loader',
           {
             loader: 'sass-loader',
             options: {
-              sourceMap: true
-            }
+              sourceMap: true,
+            },
           },
         ],
       }
