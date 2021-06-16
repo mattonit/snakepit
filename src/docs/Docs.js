@@ -14,5 +14,5 @@ ReactDOM.render(
     <Routes />
     <Footer />
   </Router>,
-  document.querySelector('#root')
-)
+  document.querySelector('#root'),
+);
