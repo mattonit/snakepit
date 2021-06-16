@@ -20,7 +20,8 @@ const config = {
   resolve: {
     alias: {
       'motif.js': path.resolve('./src/index.js')
-    }
+    },
+    extensions: ['.tsx', '.ts', '.js'],
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -30,6 +31,11 @@ const config = {
   ],
   module: {
     rules: [
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
